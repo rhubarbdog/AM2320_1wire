@@ -14,7 +14,7 @@ max_fail=0
 try:
     while True:
         try:
-            (t,h) = sensor.read()
+            (t,h) = sensor.readSensor()
             failure=0
         except AOSONG.DataError as e:
             failure+=1
