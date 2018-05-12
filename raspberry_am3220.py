@@ -20,7 +20,7 @@ class AM2320_1WIRE:
     def __init__(self,pin=None):
         self.__pin=pin
 
-    def read(self):
+    def readSensor(self):
         RPi.GPIO.setup(self.__pin,RPi.GPIO.OUT)
 
         # send initial high
